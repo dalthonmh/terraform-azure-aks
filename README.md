@@ -53,4 +53,7 @@ Para conectarse
 az aks get-credentials --resource-group aks-admision --name k8stest
 ```
 
+guia:
+[Crear Cluster AKS en Azure con Terraform](https://red-orbita.com/posts/2023/02/crear-cluster-aks-en-azure-con-terraform/)
+
 Listo!
