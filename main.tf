@@ -25,13 +25,15 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   name                = var.cluster_name
   resource_group_name = azurerm_resource_group.rg-network-aks-admision.name
   dns_prefix          = var.dns_prefix
-  tags                = {
+  kubernetes_version  = "1.35"
+  tags = {
     Environment = "Development"
   }
 
   default_node_pool {
-    name       = "k8spool"
-    vm_size    = "Standard_B2ls_v2"
+    name            = "k8spool"
+    vm_size         = "Standard_B2s"
+    os_disk_size_gb = 20
 
     node_count = var.agent_count
   }
