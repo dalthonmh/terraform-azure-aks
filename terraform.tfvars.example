@@ -1,4 +1,11 @@
-aks_service_principal_app_id = ""
+# Service Principal de Azure (obligatorio)
+aks_service_principal_app_id        = ""
 aks_service_principal_client_secret = ""
 
-cluster_name = "k8stest"
+# Configuración del cluster
+location           = "northcentralus"
+cluster_name       = "eks-cluster-basic"
+vm_size            = "Standard_B2s"
+node_count         = 2
+use_spot_instances = true
+disk_size_gb       = 20
