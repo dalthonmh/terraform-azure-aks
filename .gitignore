@@ -30,3 +30,4 @@ terraform.tfvars
 # example: *tfplan*
 
 trash/
+.claude

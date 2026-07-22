@@ -35,7 +35,7 @@ variable "use_spot_instances" {
 variable "disk_size_gb" {
   description = "Tamaño del disco de OS de cada nodo en GB (equivale a 'disk_size_gb' en AWS)."
   type        = number
-  default     = 20
+  default     = 30
 }
 
 variable "kubernetes_version" {

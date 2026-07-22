@@ -8,4 +8,4 @@ cluster_name       = "eks-cluster-basic"
 vm_size            = "Standard_B2s"
 node_count         = 2
 use_spot_instances = true
-disk_size_gb       = 20
+disk_size_gb       = 30

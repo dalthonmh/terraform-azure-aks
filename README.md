@@ -1,5 +1,19 @@
 # terraform-azure-aks
 
+comandos principales:
+
+Iniciar sesion:
+
+```sh
+az login
+```
+
+Ver suscripciones disponibles
+
+```sh
+az account list --output table
+```
+
 Primero creamos un service principal con el comando
 
 ```sh
@@ -48,7 +62,7 @@ Ejecutar normalmente
 ```sh
 terraform init
 terraform plan
-terraform apply
+terraform apply --auto-approve
 ```
 
 En caso de que salga error como
